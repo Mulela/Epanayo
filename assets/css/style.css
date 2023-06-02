@@ -87,7 +87,9 @@ h3[data-scroll="in"] {
     font-size: 110px;
     background: rgba(241, 157, 0, 0.61);
 }
-
+.sec1, .sec2 {
+    background: rgba(241, 157, 0, 0.61);
+}
 .card-body {
     background: beige;
 }
