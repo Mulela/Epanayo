@@ -26,20 +26,6 @@ body {
     transform-origin: right;
     transform: scaleX(0);
 }
-.ppc{
-    color: rgb(255, 0, 0);
-    font-size: 65px;
-    font-weight: 900;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-transform: uppercase;
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
-}
-.ppc[data-scroll="in"]{
-    transform: scaleX(1);
-    transition-delay: 0.5s;
-}
 
 .blink p[data-scroll="in"] {
     transform: scaleX(1);
