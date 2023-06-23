@@ -26,6 +26,20 @@ body {
     transform-origin: right;
     transform: scaleX(0);
 }
+.ppc{
+    color: rgb(255, 0, 0);
+    font-size: 65px;
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.ppc[data-scroll="in"]{
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
 
 .blink p[data-scroll="in"] {
     transform: scaleX(1);
@@ -87,8 +101,11 @@ h3[data-scroll="in"] {
     background: rgba(241, 157, 0, 0.61);
 }
 .sec1, .sec2 {
-    background: rgba(241, 157, 0, 0.61);
+    background: transparent;
+    font-weight: 900;
+    font-size: 30px;
 }
+
 .card-body {
     background: beige;
 }

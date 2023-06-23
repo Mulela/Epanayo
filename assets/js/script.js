@@ -1,3 +1,3 @@
 ScrollOut({
-    targets: 'p, h3, .partenaire, .choix'
+    targets: 'p, h3, .partenaire, .choix, .ppc'
 })
