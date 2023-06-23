@@ -86,12 +86,6 @@ h3[data-scroll="in"] {
     font-size: 110px;
     background: rgba(241, 157, 0, 0.61);
 }
-.sec1, .sec2 {
-    background: transparent;
-    font-weight: 900;
-    font-size: 30px;
-}
-
 .card-body {
     background: beige;
 }
