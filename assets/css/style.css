@@ -1,91 +1,157 @@
-*{
-    font-display: swap;
+
+* {
+  font-display: swap;
 }
 body {
-    background-color: rgb(3, 243, 191);
-    padding: 25px;
+  background-color: rgb(3, 243, 191);
+  padding: 25px;
+}
+
+.navigation a{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .main {
-    background-color: #222;
-    color: aliceblue;
+  background-color: #222;
+  color: aliceblue;
 }
-.mail{
-    text-decoration: none;
+.mail {
+  text-decoration: none;
 }
 
-.blink p, .blink p a {
-    font-weight: 900;
-    font-size: 45px;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-weight: 800;
-    text-align: center;
-    color: rgb(3, 243, 191);
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
+.blink p,
+.blink p a {
+  font-weight: 900;
+  font-size: 45px;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(3, 243, 191);
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
 }
 
 .blink p[data-scroll="in"] {
-    transform: scaleX(1);
-    transition-delay: 0.5s;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
 }
 
 .blink p span {
-    font-size: 65px;
-    font-weight: 900;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-transform: uppercase;
-    animation: blink 2s linear infinite;
-    text-shadow: rgb(3, 243, 191) 1px 1px, rgb(3, 243, 191) -1px 1px,
-        rgb(3, 243, 191) -1px -1px, rgb(3, 243, 191) -1px 1px;
-    color: #000;
-    background: transparent;
-    transition: 0.5s ease-out;
+  font-size: 65px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  animation: blink 2s linear infinite;
+  text-shadow: rgb(3, 243, 191) 1px 1px, rgb(3, 243, 191) -1px 1px,
+    rgb(3, 243, 191) -1px -1px, rgb(3, 243, 191) -1px 1px;
+  color: #000;
+  background: transparent;
+  transition: 0.5s ease-out;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    50% {
-        opacity: 0.5s;
-    }
+  50% {
+    opacity: 0.5s;
+  }
 
-    100% {
-        opacity: 1;
-        background-color: rgb(3, 243, 191);
-    }
+  100% {
+    opacity: 1;
+    background-color: rgb(3, 243, 191);
+    padding: 5px 10px;
+  }
 }
 
 h3 {
-    font-size: 40px;
-    transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
+  font-size: 40px;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
 }
 
 h3[data-scroll="in"] {
-    transform: scaleX(1);
-    transition-delay: 0.5s;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
 }
 
-.partenaire, .choix {
-    transition: 0.5s;
-    opacity: 0;
+.partenaire,
+.choix {
+  transition: 0.5s;
+  opacity: 0;
 }
 
-.partenaire[data-scroll="in"], .choix[data-scroll="in"] {
-    opacity: 1;
-    transition-delay: 0.5s;
+.partenaire[data-scroll="in"],
+.choix[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 
 .sec {
-    font-size: 110px;
-    background: rgba(241, 157, 0, 0.61);
+  font-size: 110px;
+  background: rgba(241, 157, 0, 0.61);
 }
 .card-body {
-    background: beige;
+  background: beige;
+}
+.stamp {
+  display: inline-block;
+  background-color: white;
+  color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  animation: rotate 2s infinite;
+  font-size: 55px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, " Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+}
+.house-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.house-item{
+    position: relative;
+}
+.house-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.house-info{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.house-info h3{
+    margin: 0;
+    font-size: 35px;
+}
+.house-info p{
+    margin: 5px 0 0;
+    font-size: 15px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
