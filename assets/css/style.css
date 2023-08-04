@@ -3,18 +3,26 @@
   font-display: swap;
 }
 body {
-    background-color: rgb(3, 243, 191);
-    padding: 25px;
+  background-color: rgb(3, 243, 191);
+  padding: 15px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
 .navigation a{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .main {
-    background-color: #222;
-    color: aliceblue;
+  background-color: #222;
+  color: white;
+  
 }
 .mail {
   text-decoration: none;
@@ -40,16 +48,17 @@ body {
 }
 
 .blink p span {
-    font-size: 65px;
-    font-weight: 900;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-transform: uppercase;
-    animation: blink 2s linear infinite;
-    text-shadow: rgb(3, 243, 191) 1px 1px, rgb(3, 243, 191) -1px 1px,
-        rgb(3, 243, 191) -1px -1px, rgb(3, 243, 191) -1px 1px;
-    color: #000;
-    background: transparent;
-    transition: 0.5s ease-out;
+  font-size: 65px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  animation: blink 2s linear infinite;
+  text-shadow: rgb(3, 243, 191) 1px 1px, rgb(3, 243, 191) -1px 1px,
+    rgb(3, 243, 191) -1px -1px, rgb(3, 243, 191) -1px 1px;
+  color: #000;
+   border-radius: 5px;
+  background: transparent;
+  transition: 0.5s ease-out;
 }
 
 @keyframes blink {
@@ -61,10 +70,12 @@ body {
     opacity: 0.5s;
   }
 
-    100% {
-        opacity: 1;
-        background-color: rgb(3, 243, 191);
-    }
+  100% {
+    opacity: 1;
+    background-color: rgb(3, 243, 191);
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
 }
 
 h3 {
