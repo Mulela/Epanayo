@@ -300,7 +300,63 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-2">
+            <div class="row text-center d-block d-md-flex choix" id="contact">
+                <div class="col-12">
+                    <h3 class="pb-2 pt-3">Voulez-vous construire votre maison ?</h3>
+                    
+                    <button class="btn text-black btn-contact pt-2" onclick="showOrHide()">Nous Contacter</button>
+                    <form action="https://formspree.io/f/mrgdewqd" method="post" class="py-3" id="formulaireContact">
+                        <div class="contact text-start">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="nom"><i class="fas fa-person"></i></span>
+                                <input type="text" class="form-control" id="nom" placeholder="Nom complet" aria-label="Nom"
+                                    name="nom">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="tel"><i class="fas fa-phone"></i></span>
+                                <input type="tel" class="form-control" id="tel" placeholder="Numéro de telephone"
+                                    name="telephone">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="email"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="Adresse email"
+                                    name="email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="interesser"><i class="fas fas fa-pen"></i></span>
+                                <input type="text" class="form-control" id="interesser" placeholder="Etes-vous intéressé ?"
+                                    name="interesser">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="parcelle"><i class="fas fas fa-pen"></i></span>
+                                <input type="text" class="form-control" id="parcelle" placeholder="Avez-vous une parcelle ?"
+                                    name="parcelle">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="commune"><i class="fas fas fa-pen"></i></span>
+                                <input type="text" class="form-control" id="commune" placeholder="Dans quelle commune se trouve votre parcelle ?"
+                                    name="commune">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="type"><i class="fas fas fa-pen"></i></span>
+                                <input type="text" class="form-control" id="type" placeholder="Quel type de maison vous intéresse ?"
+                                    name="type">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" for="Ouvrir-dossier"><i class="fas fa-pen"></i></span>
+                                <input type="text" class="form-control" id="Ouvrir-dossier" placeholder="Voulez-vous ouvrir votre dossier ?"
+                                    name="Ouvrir-dossier">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Vos préoccupations..." name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="input-group-text btn btn-light w-100">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row py-5">
                 <div class="col">
                     <div id="carouselExampleAutoplaying" class="carousel slide partenaire" data-bs-ride="carousel">
                         <div class="carousel-inner rounded-2">
@@ -334,36 +390,6 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>
-            </div>
-            <div class="row text-center d-block d-md-flex choix" id="contact">
-                <div class="col-12">
-                    <h3>Pour toutes vos questions</h3>
-                    <h4>Laissez-nous un message</h4>
-                    <form action="https://formspree.io/f/mrgdewqd" method="post" class="py-3">
-                        <div class="contact text-start">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" for="nom"><i class="fas fa-person"></i></span>
-                                <input type="text" class="form-control" id="nom" placeholder="Nom" aria-label="Nom"
-                                    name="nom">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" for="tel"><i class="fas fa-phone"></i></span>
-                                <input type="tel" class="form-control" id="tel" placeholder="Numero de telephone"
-                                    name="tel">
-                            </div>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" for="email"><i class="fas fa-envelope"></i></span>
-                                <input type="email" class="form-control" id="email" placeholder="Adresse email"
-                                    name="email">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Vos préoccupations..." name="message" required></textarea>
-                            </div>
-                            <button type="submit" class="input-group-text btn btn-light w-100">Envoyer</button>
-                        </div>
-                    </form>
                 </div>
             </div>
             <div class="row text-md-left text-start choix py-3">

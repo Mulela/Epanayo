@@ -165,3 +165,18 @@ h3[data-scroll="in"] {
     transform: rotate(0deg);
   }
 }
+
+#formulaireContact{
+  display: none;
+}
+
+.btn-contact{
+  background-color: rgb(3, 243, 191);
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 12px 17px;
+}
+.btn-contact:hover{
+  background-color: rgb(3, 243, 191);
+}
