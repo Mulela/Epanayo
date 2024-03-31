@@ -252,4 +252,15 @@ footer {
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .imgBox {
+    width: 50px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 280px) {
+  .all {
+    width: 120%; /* Ajouter cette règle pour que le bloc occupe la largeur complète */
+  }
 }

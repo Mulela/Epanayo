@@ -11,6 +11,10 @@ let showOrHide = function () {
 };
 function evoyerFormulaire(event) {
   event.preventDefault(); // Empêche la soumission normale du formulaire
+
+  // Afficher le chargement
+  $("#loading").show();
+
   // Récupérer les données du formulaire
   var formData = $("#formulaireContact").serializeArray();
   $.ajax({
@@ -53,5 +57,9 @@ function evoyerFormulaire(event) {
         button: "OK",
       });
     },
+    complete: function () {
+      // Masquer le spinner de chargement une fois que la requête AJAX est complète
+      $("#loading").hide();
+    }
   });
 }
